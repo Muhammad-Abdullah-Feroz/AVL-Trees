@@ -5,20 +5,23 @@ using namespace std;
 
 int main(){
     AVLTree t;
-    t.insertNode(50);
-	t.insertNode(30);
-	t.insertNode(20);
-	t.insertNode(25);
-	t.insertNode(40);
+    t.insertNode(3);
+	t.insertNode(6);
+	t.insertNode(8);
 	t.insertNode(10);
-	t.insertNode(70);
-	t.insertNode(60);
-	t.insertNode(80);
-	t.insertNode(90);
+	t.insertNode(12);
+	t.insertNode(16);
+	t.insertNode(20);
+	t.insertNode(18);
+	t.insertNode(24);
+	t.insertNode(19);
     t.display();
-    cout<<endl;
-    t.deleteNode(50);
-    t.display();
+
+    cout<<endl<<endl<<endl;
+	t.printTree();
+    cout<<endl<<endl<<endl;
+    // t.deleteNode(50);
+    t.displayPreOrder();
 
 
     return 0;
